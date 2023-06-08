@@ -10,7 +10,27 @@
   /******************************************
   /* LAYOUT
   /*******************************************/
+  body {
+    font-size: 62.5%;
+    margin: 25px;
+    text-align: center;
+  }
 
+  .quote-modal {
+    margin: 50px auto;
+    border: 4px solid black;
+    height: 200px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .quote-card{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
 
   
   /******************************************
@@ -19,4 +39,19 @@
   
 .italic {
     font-style: italic;
+}
+
+.quote {
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1rem;
 }
