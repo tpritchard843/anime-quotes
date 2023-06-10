@@ -14,6 +14,9 @@
     font-size: 62.5%;
     margin: 25px;
     text-align: center;
+    background-image: url("/images/anime-landscape.jpg");
+    background-size: cover;
+    color: #463f3a;
   }
 
   .quote-modal {
@@ -61,5 +64,7 @@ h3 {
 }
 
 button {
-  border-radius: 10px;
+  border-radius: 20px;
+  border: none;
+  padding: 5px 20px;
 }
