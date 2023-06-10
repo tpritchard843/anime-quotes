@@ -16,17 +16,26 @@
     text-align: center;
     background-image: url("/images/anime-landscape.jpg");
     background-size: cover;
-    color: #463f3a;
+    color: white;
+  }
+
+  .main-section {
+    background: rgb(0, 0, 0, 0.5);
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 40%;
+    border-radius: 10px;
   }
 
   .quote-modal {
     margin: 50px auto;
-    border: 4px solid black;
+    background: rgb(0, 0, 0, 0.5);
     height: 200px;
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
   }
 
   .quote-card{
