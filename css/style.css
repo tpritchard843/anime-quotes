@@ -59,3 +59,7 @@ h3 {
 .hidden {
     display: none;
 }
+
+button {
+  border-radius: 10px;
+}

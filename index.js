@@ -42,5 +42,5 @@ function getRandomQuote() {
 
 
 function renderQuote() {
-    document.querySelector('.quote-modal').classList.remove('hidden')
+    document.querySelector('.quote-modal').classList.remove('hidden');
 }
