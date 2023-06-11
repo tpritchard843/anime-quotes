@@ -74,6 +74,12 @@ h3 {
     font-size: 1rem;
 }
 
+
+.anime-name {
+  font-size: 1.25rem;
+  margin-top: 5px;
+}
+
 .hidden {
     display: none;
 }

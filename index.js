@@ -29,7 +29,7 @@ function getRandomQuote() {
         console.log(data);
         
         document.querySelector('.quote').innerText = `"${data.quote}"`;
-        document.querySelector('.character-name').innerText = `- ${data.character}`;
+        document.querySelector('.character-name').innerText = `${data.character}`;
         document.querySelector('.anime-name').innerText = data.anime;
         
         renderQuote();
