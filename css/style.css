@@ -92,6 +92,11 @@ button {
   color: white;
 }
 
+button:hover {
+  background: white;
+  color: #55a630;
+}
+
 .input {
   border-radius: 10px;
   border: none;

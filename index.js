@@ -9,11 +9,15 @@ function getQuote() {
     .then(data => {
         console.log(data);
 
-        document.querySelector('.quote').innerText = `"${data.quote}"`;
-        document.querySelector('.character-name').innerText = `- ${data.character}`;
-        document.querySelector('.anime-name').innerText = data.anime;
+        if (!data.quote) {
+            alert('We cannot find this anime. Please try a different one.')
+        } else {
+            document.querySelector('.quote').innerText = `"${data.quote}"`;
+            document.querySelector('.character-name').innerText = `- ${data.character}`;
+            document.querySelector('.anime-name').innerText = data.anime;
 
-        renderQuote();
+            renderQuote();
+        }
     })
     .catch(err => {
         console.log(`error ${err}`);
