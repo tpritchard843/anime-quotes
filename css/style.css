@@ -97,6 +97,11 @@ button:hover {
   color: #55a630;
 }
 
+.copy-btn {
+  margin: 5px auto;
+  width: 75px;
+}
+
 .input {
   border-radius: 10px;
   border: none;

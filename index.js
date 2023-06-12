@@ -1,5 +1,6 @@
 document.querySelector('#search-btn').addEventListener('click', getQuote);
 document.querySelector('#random-btn').addEventListener('click', getRandomQuote);
+document.querySelector('.copy-btn').addEventListener('click', copyQuote);
 
 function getQuote() {
     let input = document.querySelector('.input').value;
@@ -10,7 +11,7 @@ function getQuote() {
         console.log(data);
 
         if (!data.quote) {
-            alert('We cannot find this anime. Please try a different one.')
+            alert('We cannot find this anime. Please try a different one.');
         } else {
             document.querySelector('.quote').innerText = `"${data.quote}"`;
             document.querySelector('.character-name').innerText = `- ${data.character}`;
@@ -47,4 +48,9 @@ function getRandomQuote() {
 
 function renderQuote() {
     document.querySelector('.quote-modal').classList.remove('hidden');
+}
+
+function copyQuote() {
+    navigator.clipboard.writeText(document.querySelector('.quote').textContent);
+    alert('Quote copied to clipboard');
 }
