@@ -1,3 +1,5 @@
+//using animechan for API source --> https://animechan.vercel.app/
+
 document.querySelector('#search-btn').addEventListener('click', getQuote);
 document.querySelector('#random-btn').addEventListener('click', getRandomQuote);
 document.querySelector('.copy-btn').addEventListener('click', copyQuote);
